@@ -1,7 +1,25 @@
 aid: mesodyne
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/mesodyne.png
 name: Mesodyne
-description: Mesodyne is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Mesodyne is an MIT-founded engineering and manufacturing company (established
+  2018) that builds the LightCell, a patented thermophotovoltaic power generator which
+  converts liquid and gaseous fuels — gasoline, diesel, propane, jet fuel, and hydrogen —
+  directly into silent electricity with more than ten times the energy density of
+  batteries. Designed for military, tactical, drone, and off-grid use, it operates
+  day or night across extreme environments with low heat and emissions signatures and
+  no routine maintenance. Mesodyne publishes no public developer API, SDK, or documentation
+  surface; this profile captures the company identity and its domain-security posture.
 url: https://raw.githubusercontent.com/api-evangelist/mesodyne/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +29,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Energy
+- Power Generation
+- Hardware
+- Defense
+- Cleantech
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +44,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/mesodyne-domain-security.yml
 - type: Website
   url: https://mesodyne.com/
+- type: Blog
+  url: https://www.mesodyne.com/news
+- type: Support
+  url: https://www.mesodyne.com/contact
+- type: PrivacyPolicy
+  url: https://www.mesodyne.com/privacy-policy
+- type: TermsOfService
+  url: https://www.mesodyne.com/terms-of-service
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
